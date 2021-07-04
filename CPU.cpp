@@ -51,6 +51,7 @@ void CPU::run() {
             WB();
         if(!CPU_MEM.jump_flag) CPU_MEM.jump(4);
         else CPU_MEM.jump_flag=false;
+         delete current_order;
     }
 }
 
